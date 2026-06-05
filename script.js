@@ -37,20 +37,39 @@ document.addEventListener('DOMContentLoaded', () => {
     
     typeEffect();
 
-    // ========== SCROLL REVEAL ANIMATION (with floating entrance from different directions) ==========
+    // ========== SCROLL REVEAL ANIMATION ==========
     const animatedElements = document.querySelectorAll('.scroll-animate');
     
     const scrollObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Add visible class to trigger the animation
                 entry.target.classList.add('visible');
             } else {
-                // Remove class when out of view - so they animate again when scrolling back
                 entry.target.classList.remove('visible');
             }
         });
-    }, { threshold: 0.15, rootMargin: "0px 0px -20px 0px" }); // Trigger when 15% visible
+    }, { threshold: 0.15, rootMargin: "0px 0px -20px 0px" });
     
     animatedElements.forEach(el => scrollObserver.observe(el));
+
+    // ========== LIGHT / DARK THEME TOGGLE (FIXED) ==========
+    const themeIconBtn = document.getElementById('themeIcon');
+    const htmlElement = document.documentElement;
+
+    if (themeIconBtn) {
+        themeIconBtn.addEventListener('click', () => {
+            // Check current theme attribute value on the <html> tag
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            
+            if (currentTheme === 'dark') {
+                // Change to Light Mode
+                htmlElement.setAttribute('data-theme', 'light');
+                themeIconBtn.textContent = '🌙'; // Keeps switch visual clear
+            } else {
+                // Change back to Dark Mode
+                htmlElement.setAttribute('data-theme', 'dark');
+                themeIconBtn.textContent = '☀️'; // Toggle button internal emoji icon
+            }
+        });
+    }
 });
