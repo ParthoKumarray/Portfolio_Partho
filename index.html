@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Partho Roy | Data Analyst Portfolio — Scroll Animations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-flow">
+        <div class="blob"></div>
+        <div class="blob2"></div>
+    </div>
+
+    <header>
+        <div class="container nav-flex">
+            <a href="#about" class="logo-link">
+                <div class="logo">PARTHO ROY<span>.</span></div>
+            </a>
+            <div class="nav-right-cluster">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Stack</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Achievements</a></li>
+                        <li><a href="#connect">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="https://wa.me/8801825949097?text=Hi%20Partho,%20I%27d%20like%20to%20discuss%20an%20internship/work%20opportunity%20with%20you." target="_blank" class="btn-hire">💼 Offer Intern / Work</a>
+                <button class="theme-btn" id="themeIcon">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="container hero" id="about">
+        <div class="hero-text scroll-animate animate-right">
+            <span class="greeting">👋 Hello, I'm</span>
+            <h1>
+                <span class="name-linebreak">Partho Kumar</span>
+                <span class="name-linebreak">Roy</span>
+            </h1>
+            <div class="hero-tagline">
+                <span id="typed-text"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+                A 4th-year student at Varendra University passionate about turning raw
+                data into meaningful insights. Building expertise in SQL, Python,
+                Power BI, and AI — one dataset at a time.
+            </p>
+            <div class="btn-group">
+                <a href="https://www.linkedin.com/in/partho-kumar-ray-2a5248237" target="_blank" class="btn-main btn-blue">🔗 VIEW LINKEDIN</a>
+                <a href="#connect" class="btn-main btn-outline">💡 SUGGEST PROJECT IDEA</a>
+            </div>
+            <div class="stat-badge-group">
+                <div class="stat-item"><span class="stat-number">2★</span><span class="stat-label">HACKERRANK SQL</span></div>
+                <div class="stat-item"><span class="stat-number">4th</span><span class="stat-label">YEAR STUDENT</span></div>
+                <div class="stat-item"><span class="stat-number">2+</span><span class="stat-label">CERTIFICATIONS</span></div>
+            </div>
+        </div>
+        <div class="hero-img-box scroll-animate animate-left">
+            <img src="Partho Roy.png" alt="Partho Roy">
+        </div>
+    </section>
+
+    <section class="skills-container" id="skills">
+        <div class="container">
+            <h2 class="section-title scroll-animate animate-up">📌 Technical Arsenal</h2>
+            <div class="tech-showcase-grid">
+                <div class="tech-pill-card scroll-animate animate-left"><h3>⚙️ Core Engines</h3><div class="tech-list"><span class="tech-highlight-tag">SQL</span><span class="tech-highlight-tag">Excel</span><span class="tech-highlight-tag">Python</span></div></div>
+                <div class="tech-pill-card scroll-animate animate-up"><h3>📊 Analytics Toolkit</h3><div class="tech-list"><span class="tech-highlight-tag">Pandas</span><span class="tech-highlight-tag">NumPy</span><span class="tech-highlight-tag">Matplotlib</span></div></div>
+                <div class="tech-pill-card scroll-animate animate-right"><h3>📈 Visualization</h3><div class="tech-list"><span class="tech-highlight-tag">Power BI</span><span class="tech-highlight-tag">Tableau</span></div></div>
+                <div class="tech-pill-card scroll-animate animate-left"><h3>🧠 AI Foundations</h3><div class="tech-list"><span class="tech-highlight-tag">Regression</span><span class="tech-highlight-tag">Classification</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container projects-container" id="projects">
+        <h2 class="section-title scroll-animate animate-down">📁 Projects & Pipelines</h2>
+        <div class="project-grid">
+            <div class="project-card scroll-animate animate-left">
+                <div class="project-body">
+                    <span class="status-badge status-completed">✅ Completed</span>
+                    <h3 style="margin:1rem 0 0.3rem;">EmpathyFirst: Intelligent Enterprise Support Agent</h3>
+                    <p style="color:var(--accent); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.8rem;">Google AI Agents Capstone Project</p>
+                    <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+                        A specialized customer service & triage agent built on Gemini 2.5 Flash. Dynamically analyzes customer sentiment and urgency protocols in real-time.
+                    </p>
+                    <div style="margin-top: 1rem; padding-top: 0.8rem; border-top: 1px dashed var(--border-subtle);">
+                        <ul style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-dim);">
+                            <li>🛠️ <strong>Function Calling:</strong> get_order_status() & escalate_ticket() tools</li>
+                            <li>🧠 <strong>Context Engineering:</strong> Real-time sentiment routing</li>
+                            <li>📦 <strong>Infrastructure:</strong> Vertex AI ready</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="https://kaggle.com/competitions/agents-intensive-capstone-project/writeups/new-writeup-1764521326515" class="btn-main" style="padding: 0.5rem 1.2rem; font-size: 0.85rem; width: 100%; justify-content: center; border-radius: 12px;">📖 READ TECHNICAL WRITEUP</a>
+                </div>
+            </div>
+
+            <div class="project-card scroll-animate animate-up">
+                <div class="project-body">
+                    <span class="status-badge status-upcoming">⚙️ In Build</span>
+                    <h3 style="margin: 1rem 0 0.5rem">SQL Data Analysis & Reporting Pipeline</h3>
+                    <p>ETL pipeline development, complex joins, window functions, and cohort retention modeling on real e-commerce transaction data. Generating actionable business insights through SQL queries and visualization readiness.</p>
+                </div>
+            </div>
+
+            <div class="project-card scroll-animate animate-right">
+                <div class="project-body">
+                    <span class="status-badge status-upcoming">📊 Ongoing</span>
+                    <h3 style="margin: 1rem 0 0.5rem">Customer Segmentation Analysis</h3>
+                    <p>Exploratory data analysis on customer purchasing behavior using Python (Pandas, Matplotlib, Seaborn). Clustering analysis to identify key customer segments for targeted marketing strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="edu-achieve-container" id="education">
+        <div class="container">
+            <h2 class="section-title scroll-animate animate-up">🎓 Education & Certifications</h2>
+            <div class="edu-grid">
+                <div class="edu-card scroll-animate animate-left">
+                    <div>
+                        <span style="background:var(--accent)20; padding:0.2rem 0.8rem; border-radius:20px; display:inline-block;">🎯 Bachelor's Degree</span>
+                        <h3 style="margin:1rem 0 0.3rem;">B.Sc. in Computer Science & Engineering</h3>
+                        <p style="color:var(--accent); font-weight: 600;">Varendra University</p>
+                        <p style="color:var(--text-dim);">4th Year Undergraduate student focusing on database systems, algorithms, and data engineering foundations.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px dashed var(--border-subtle);">
+                        <ul style="list-style: none; padding: 0; color: var(--text-dim);">
+                            <li>🏫 Academic Focus: SQL & DBMS</li>
+                            <li>💻 Programming Club Member</li>
+                            <li>📚 CGPA: 3.30+ (Ongoing)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="edu-card scroll-animate animate-up">
+                    <div>
+                        <span style="background:#10b98120; padding:0.2rem 0.8rem; border-radius:20px; display:inline-block;">📜 Verified Credential</span>
+                        <h3 style="margin:1rem 0 0.3rem;">Data Analyst with SQL & Python</h3>
+                        <p style="color:var(--text-dim);">Accredited training covering advanced querying, data manipulation, and statistical storytelling.</p>
+                    </div>
+                    <div class="cert-img-wrap">
+                        <img src="9c47095589c97b443ce894898250b4e8055825e44552f9edacb521b04e9d471a.jpg" alt="Certificate Badge">
+                    </div>
+                </div>
+
+                <div class="edu-card scroll-animate animate-right">
+                    <div>
+                        <span style="background:#f59e0b20; padding:0.2rem 0.8rem; border-radius:20px; display:inline-block; color:#f59e0b;">🔄 Ongoing</span>
+                        <h3 style="margin:1rem 0 0.3rem;">IBM Data Analyst Professional Certificate</h3>
+                        <p style="color:var(--text-dim);">Comprehensive multi-course program mastering industry-grade business intelligence and data ecosystems.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px dashed var(--border-subtle);">
+                        <strong style="color: var(--accent);">📖 Program Curriculum:</strong>
+                        <ul style="list-style: none; padding: 0; margin-top: 0.5rem; color: var(--text-dim);">
+                            <li>🔹 Excel & Cognos Analytics Dashboards</li>
+                            <li>🔹 Python for Data Analysis And Engineering</li>
+                            <li>🔹 SQL Data Engineering Pipelines</li>
+                        </ul>
+                    </div>
+                    <div style="margin-top: 1rem; background: var(--card); padding: 0.8rem; border-radius: 12px; font-size: 0.85rem;">
+                        🚀 <strong>Progress:</strong> 30% completed — Expected completion: December 2026
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container connect-container" id="connect">
+        <h2 class="section-title scroll-animate animate-down">🌐 Let's Collaborate</h2>
+        <div class="connect-grid">
+            <div class="scroll-animate animate-left">
+                <a href="mailto:helloparthokumar.roy@gmail.com" class="contact-pill-item"><strong>📧 Email</strong><p>helloparthokumar.roy@gmail.com</p></a>
+                <a href="https://wa.me/8801825949097" target="_blank" class="contact-pill-item"><strong>📱 WhatsApp</strong><p>+8801825949097</p></a>
+            </div>
+            <div class="scroll-animate animate-right">
+                <p style="margin-bottom: 1rem">Portfolio & code libraries:</p>
+                <div class="socials-cluster">
+                    <a href="https://github.com/ParthoKumarray" target="_blank" class="social-link-btn">🐙 GitHub</a>
+                    <a href="https://www.hackerrank.com/profile/parthoroy902" target="_blank" class="social-link-btn">⭐ HackerRank</a>
+                    <a href="https://www.kaggle.com/parthokumarray" target="_blank" class="social-link-btn">📊 Kaggle</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Partho Kumar Roy — Built with precision for data-centric impact. 🚀</p>
+        <div class="footer-contact-links">
+            <a href="mailto:helloparthokumar.roy@gmail.com">✉️ helloparthokumar.roy@gmail.com</a>
+            <a href="https://wa.me/8801825949097">📞 WhatsApp: +8801825949097</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
